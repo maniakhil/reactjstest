@@ -1,6 +1,7 @@
-React Js Test Application
 
-Features :​
+## React Js Test Application
+
+### Features :​
 
 Login - Basic styling using sass and Login form implementation  ​
 
@@ -10,7 +11,7 @@ Routing - Routing to dashboard after successful login​
 
 Data Population - Listing some array of data from a REST API in dashboard
 
-Requirements :
+### Requirements :
 
 React JS - 16.13.1
 
