@@ -1,0 +1,25 @@
+.login-page {
+    background-image: url(./../../img/AdobeStock_220729450.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+.username, .password {
+    height: 37px;
+    width: 243px;
+    padding: 12px 6px;
+}
+.submitBtn {
+    font-size: 18px;
+    cursor: pointer;
+}
+.error {
+    color: red;
+}
+.form-box {
+    margin-left: 200px;
+    margin-top: 150px;
+}

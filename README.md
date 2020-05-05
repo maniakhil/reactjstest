@@ -1,3 +1,27 @@
+React Js Test Application
+
+Features :​
+
+Login - Basic styling using sass and Login form implementation  ​
+
+API Integration - Login Rest API Integration with the help of react services ​
+
+Routing - Routing to dashboard after successful login​
+
+Data Population - Listing some array of data from a REST API in dashboard
+
+Requirements :
+
+React JS - 16.13.1
+
+Node JS - 13.7.0
+
+React Router DOM - 5.1.2
+
+node-sass - 4.14.0
+
+MySQL Connector - 2.18.1
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

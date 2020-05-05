@@ -1,0 +1,35 @@
+.logout-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  .row {
+      width: 100%;
+    text-align: center;
+
+  }
+
+  .col-6 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    border-right: 1px solid #dadada;
+    &:last-child {
+        border :0;
+    }
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+  }
