@@ -1,5 +1,6 @@
 
 ## React Js Test Application
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### Features :​
 
@@ -20,10 +21,6 @@ Node JS - 13.7.0
 React Router DOM - 5.1.2
 
 node-sass - 4.14.0
-
-MySQL Connector - 2.18.1
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
