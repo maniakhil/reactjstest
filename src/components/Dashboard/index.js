@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import updateMovies from './../../stores/user_store/actions/updateMovies';
+import fetchUsers from './../../stores/user_store/actions/fetchUsers';
 
 import DashboardService from './dashboardService';
 
 import './dashboardStyle.scss'
 
-export default class Dashboard extends Component {
+class Dashboard extends Component {
 
     constructor(props) {
         super(props);
@@ -46,6 +49,17 @@ export default class Dashboard extends Component {
                     </div>
                     <div className="col-6">
                         <h5><u>Live Data</u></h5>
+
+                        <span>YOUR CURRENT MOVIE IS: {this.props.movies.name}</span><br /><br />
+                        <button onClick={this.props.updateMovies}>SELECT NEW MOVIE</button><br /><br />
+
+                        <button onClick={this.props.fetchUsers}>FETCH USERS</button>
+                        <div>
+                            {this.props.users.length === 0 ? <p>THERE ARE NO USERS</p> :
+                                this.props.users.map(user => <p key={user.id}>{user.user_name} - {user.user_email}</p>)
+                            }
+                        </div>
+
                     </div>
                 </div>
             </div>)
@@ -73,3 +87,19 @@ export default class Dashboard extends Component {
         this.props.history.push("login");
     }
 }
+
+const MapStateToProps = (state) => {
+    return {
+        movies: state.movies,
+        users: state.users
+    };
+}
+
+const MapDispatchToProps = (dispatch) => {
+    return {
+        updateMovies: () => dispatch(updateMovies),
+        fetchUsers: () => dispatch(fetchUsers),
+    }
+};
+
+export default connect(MapStateToProps, MapDispatchToProps)(Dashboard)
