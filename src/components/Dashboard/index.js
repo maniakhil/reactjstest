@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import updateMovies from './../../stores/user_store/actions/updateMovies';
 import fetchUsers from './../../stores/user_store/actions/fetchUsers';
-
+import Looker from './Looker/index';
 import DashboardService from './dashboardService';
 
 import './dashboardStyle.scss'
@@ -28,6 +28,12 @@ class Dashboard extends Component {
                 <p>React 16.13.1 Test Application by Mani</p>
 
                 <div className="row">
+                    <div className="col-12">
+                        <Looker/>
+                    </div>
+                </div>
+
+                {/* <div className="row">
                     <div className="col-6">
                         <h5><u>Todos</u></h5>
 
@@ -61,7 +67,7 @@ class Dashboard extends Component {
                         </div>
 
                     </div>
-                </div>
+                </div> */}
             </div>)
     }
 
